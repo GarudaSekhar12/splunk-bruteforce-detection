@@ -1,0 +1,1143 @@
+Account_Domain,Account_Name,Authentication_Package,Caller_Process_ID,Caller_Process_Name,ComputerName,Elevated_Token,EventCode,EventType,Failure_Reason,Impersonation_Level,Key_Length,Keywords,Linked_Logon_ID,LogName,Logon_GUID,Logon_ID,Logon_Process,Logon_Type,Message,Network_Account_Domain,Network_Account_Name,OpCode,Package_Name__NTLM_only_,Privileges,Process_ID,Process_Name,RecordNumber,Remote_Credential_Guard,Restricted_Admin_Mode,Security_ID,SourceName,Source_Network_Address,Source_Port,Status,Sub_Status,TaskCategory,Transited_Services,Type,Virtual_Account,Workstation_Name,_raw,_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,eventtype,host,index,linecount,,source,sourcetype,splunk_server,splunk_server_group,tag,tag::eventtype,timeendpos,timestartpos
+"WORKGROUP
+Font Driver Host","NVHIAD-PG01CXUU$
+UMFD-0",Negotiate,,,NVHIAD-PG01CXUU,No,4624,0,,Impersonation,0,Audit Success,0x0,Security,{00000000-0000-0000-0000-000000000000},"0x3E7
+0x11E5A",Advapi,2,"An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		Yes
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-96-0-0
+	Account Name:		UMFD-0
+	Account Domain:		Font Driver Host
+	Logon ID:		0x11E5A
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x398
+	Process Name:		C:\Windows\System32\wininit.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",-,-,Info,-,,0x398,C:\Windows\System32\wininit.exe,1828091,-,-,"S-1-5-18
+S-1-5-96-0-0",Microsoft Windows security auditing.,-,-,,,System Integrity,-,Information,Yes,-,"04/04/2026 05:58:00.226 AM
+LogName=Security
+EventCode=4624
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828091
+Keywords=Audit Success
+TaskCategory=System Integrity
+OpCode=Info
+Message=An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		Yes
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-96-0-0
+	Account Name:		UMFD-0
+	Account Domain:		Font Driver Host
+	Logon ID:		0x11E5A
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x398
+	Process Name:		C:\Windows\System32\wininit.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:58:00.226+0530,5,4,58,april,0,saturday,2026,local,,NVHIAD-PG01CXUU,main,71,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NT AUTHORITY","NVHIAD-PG01CXUU$
+SYSTEM",Negotiate,,,NVHIAD-PG01CXUU,Yes,4624,0,,Impersonation,0,Audit Success,0x0,Security,{00000000-0000-0000-0000-000000000000},"0x3E7
+0x3E7",Advapi,5,"An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2e4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",-,-,Info,-,,0x2e4,C:\Windows\System32\services.exe,1828088,-,-,"S-1-5-18
+S-1-5-18",Microsoft Windows security auditing.,-,-,,,System Integrity,-,Information,No,-,"04/04/2026 05:58:00.226 AM
+LogName=Security
+EventCode=4624
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828088
+Keywords=Audit Success
+TaskCategory=System Integrity
+OpCode=Info
+Message=An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2e4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:58:00.226+0530,5,4,58,april,0,saturday,2026,local,,NVHIAD-PG01CXUU,main,71,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828081,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:54.422 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828081
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:54.422+0530,5,4,56,april,54,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828080,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:52.168 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828080
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:52.168+0530,5,4,56,april,52,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828079,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:49.807 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828079
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:49.807+0530,5,4,56,april,49,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828078,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:47.648 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828078
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:47.648+0530,5,4,56,april,47,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828077,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:45.544 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828077
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:45.544+0530,5,4,56,april,45,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NVHIAD-PG01CXUU","NVHIAD-PG01CXUU$
+GARUDA",Negotiate,0x908,C:\Windows\System32\svchost.exe,NVHIAD-PG01CXUU,,4625,0,Unknown user name or bad password.,,0,Audit Failure,,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,Info,-,,,,1828076,,,"S-1-5-18
+S-1-0-0",Microsoft Windows security auditing.,127.0.0.1,0,0xC000006D,0xC000006A,User Account Management,-,Information,,NVHIAD-PG01CXUU,"04/04/2026 05:56:43.139 AM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828076
+Keywords=Audit Failure
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		GARUDA
+	Account Domain:		NVHIAD-PG01CXUU
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x908
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	NVHIAD-PG01CXUU
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:43.139+0530,5,4,56,april,43,saturday,2026,local,,NVHIAD-PG01CXUU,main,61,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+"WORKGROUP
+NT AUTHORITY","NVHIAD-PG01CXUU$
+SYSTEM",Negotiate,,,NVHIAD-PG01CXUU,Yes,4624,0,,Impersonation,0,Audit Success,0x0,Security,{00000000-0000-0000-0000-000000000000},"0x3E7
+0x3E7",Advapi,5,"An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x3e8
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",-,-,Info,-,,0x3e8,C:\Windows\System32\services.exe,1828069,-,-,"S-1-5-18
+S-1-5-18",Microsoft Windows security auditing.,-,-,,,User Account Management,-,Information,No,-,"04/04/2026 05:56:41.074 AM
+LogName=Security
+EventCode=4624
+EventType=0
+ComputerName=NVHIAD-PG01CXUU
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=1828069
+Keywords=Audit Success
+TaskCategory=User Account Management
+OpCode=Info
+Message=An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		NVHIAD-PG01CXUU$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Remote Credential Guard:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x3e8
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",2026-04-04T05:56:41.074+0530,5,4,56,april,41,saturday,2026,local,,NVHIAD-PG01CXUU,main,71,,WinEventLog:Security,WinEventLog:Security,GARUDA,,,,27,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

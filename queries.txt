@@ -1,0 +1,5 @@
+source="WinEventLog:Security" EventCode IN (4624,4625)
+| stats count(eval(EventCode=4625)) as failed_attempts 
+        count(eval(EventCode=4624)) as success_attempts 
+        by Account_Name, Source_Network_Address
+| where failed_attempts > 5 AND success_attempts > 0
